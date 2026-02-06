@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine for Cheesu 💖</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            font-family: "Segoe UI", sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #b30000;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #800000;
+        }
+
+        .message {
+            font-size: 20px;
+            margin: 20px auto;
+            width: 80%;
+            color: #4d0000;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            animation: float 6s infinite;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0% {
+                bottom: 0;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+
+        .buttons button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #ff3366;
+            color: white;
+        }
+
+        .no {
+            background-color: #999;
+            color: white;
+        }
+
+        img {
+            margin-top: 15px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #b30000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="heart" style="left:10%;">❤️</div>
+    <div class="heart" style="left:30%;">💖</div>
+    <div class="heart" style="left:50%;">💘</div>
+    <div class="heart" style="left:70%;">❤️</div>
+    <div class="heart" style="left:90%;">💞</div>
+
+    <h1>💝 Happy Valentine's Day 💝</h1>
+    <h2>Dear Cheesu 🥰</h2>
+
+    <div class="message">
+        From the moment you came into my life,<br>
+        everything started feeling magical 🌸<br><br>
+        Your smile is my favorite thing 😍<br>
+        My heart belongs to you ❤️
+    </div>
+
+    <!-- Optional Photo -->
+    <!-- <img src="cheesu_photo.jpg" alt="Us"> -->
+
+    <h2>Will you be my Valentine? 💘</h2>
+
+    <div class="buttons">
+        <button class="yes" onclick="yesClicked()">YES 💖</button>
+        <button class="no" onclick="noClicked()">NO 🙈</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("result").innerHTML =
+                "Yayyyy 😍💖<br>You just made me the happiest person!<br>I love you forever, Cheesu ❤️";
+        }
+
+        function noClicked() {
+            document.getElementById("result").innerHTML =
+                "Are you sure? 😜 My heart is still yours 💗";
+        }
+    </script>
+
+</body>
+</html>
